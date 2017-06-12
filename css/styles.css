@@ -1,0 +1,357 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+}
+
+/*END OF RESET*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BASIC SITE STYLES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.top {
+	font-family: 'Raleway', Arial, sans-serif;
+	width: 200px;
+	padding: 10px;
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+	border: none;
+	border-radius: 8px;
+	background-color: #c60751;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.underline {
+	width: 1220px;
+	height: 50px;
+	border-bottom: 1px solid;
+	border-bottom-color: #5e5e5d;
+	margin-bottom: 50px;
+	margin-left: 30px;
+}
+
+h1 {
+	color: white;
+	font-size: 81px;
+	font-family: 'Lobster', serif;
+	padding: 70px;
+}
+
+h2 {
+	font-size: 50px;
+	font-family: 'Lobster', serif;
+	padding: 20px;
+	color: #c60751;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: 'Raleway', Arial, sans-serif;
+	color: #5e5f61;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+body {
+	font-family: 'Lusitana', 'Times-New-Roman', serif;
+	font-size: 12pt;
+	color: #363639;
+	line-height: 1.5;
+}
+
+#container {
+	width: 1366px;
+	margin: 0 auto; 
+}
+
+.curve {
+	display: inline;
+	border-radius: 30px 0 30px 0;
+	margin: 0 auto;
+}
+
+button {
+	width: 180px;
+	height: 40px;
+	border: none;
+	border-radius: 8px;
+	background-color: #548ad7;
+	color: white;
+	font-family: 'Raleway', Arial, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px 0 30px 75px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #7FA6D7;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+header {
+	background-image: url('../img/banner1.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 388px;
+	width: 1366px;
+	margin: 0 auto; 
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVIGATION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+nav {
+	width: 1366px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 18px;
+	font-family: 'Raleway', Arial, sans-serif;
+	text-align: center;
+	margin: 0 auto;
+}
+
+nav ul {
+	text-align: left;
+	display: inline;
+	margin: 0;
+	padding: 15px 4px 17px 0;
+	list-style: none;
+
+}
+
+nav ul li {
+	display: inline;
+	margin-right: -4px;
+	position: relative;
+	cursor: pointer;
+	padding: 15px 20px;
+		-webkit-transition: all 0.2s;
+		-ms-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+nav ul li:hover {
+	background: #ECEDEE;
+	color: #c60751;
+}
+
+nav a {
+	text-decoration: none;
+	color: #000000;
+	padding: 10px;
+}
+
+/* sub menu drop down style */
+
+nav ul li ul {
+	padding: 0;
+	position: absolute;
+	top: 48px;
+	left: 0;
+	width: 150px;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+		-webkit-transition: opacity 0.2s;
+		-ms-transition: opacity 0.2s;
+		-moz-transition: opacity 0.2s;
+		-o-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+nav ul li ul li {
+	display: block;
+	background: #ECEDEE
+	color: #FFF;
+}
+
+nav ul li ul li:hover {
+	background-color: #5e5f61;
+}
+
+nav ul li:hover ul {
+	display: block;
+	opacity: 1;
+	visibility: visible; 
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TOURS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+section.tours {
+	background-color: #ECEDEE;
+	margin-bottom: 70px;
+}
+
+.arttour {
+	float: left;
+	width: 323px;
+	margin-left: 99px;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ARTICLES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+section.articles {
+	background-color: #ECEDEE;
+	margin-bottom: 70px;
+}
+
+.artart {
+	float: left;
+	width: 323px;
+	margin-left: 232px;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TESTIMONIALS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+section.test {
+	background-color: #363639;
+	margin-bottom: 70px;
+}
+
+.arttest {
+	padding: 20px;
+	display:inline-block;
+	float: left;
+	width: 600px;
+	margin: 10px 0 10px 30px;
+	text-align: justify;
+	color: #ECEDEE;
+}
+
+#icon {
+	display: inline;
+	float: left;
+	width: 150px;
+	height: 150px;
+	padding: 20px;
+}
+
+.buttonholder {
+	margin-left: 500px;
+	padding: 20px;
+}
+
+#light {
+	color: #ECEDEE;
+}
+
+#curl {
+	position: absolute;
+	float: left;
+	height:130px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CONTACT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+section.contact {
+	background-color: #ECEDEE;
+	margin-bottom: 70px;
+}
+
+.artcon {
+	float: left;
+	display: inline-block;
+	margin-left: 188px;
+	width: 400px;
+}
+
+input {
+	padding: 5px;
+	width: 300px;
+	margin: 20px 0 20px 0;
+	border: solid #548ad7;
+	border-radius: 8px;
+}
+
+textarea {
+	padding: 5px;
+	width: 300px;
+	margin: 20px 0 20px 0;
+	border: solid #548ad7;
+	border-radius: 8px;
+}
+
+#quote {
+	float: left;
+	font-size: 40px;
+	color: #c60751;
+	padding-right: 10px;
+}
+
+.map {
+	margin: 30px 0 40px 0;
+}
+
+#consub {
+	font-family: 'Raleway', Arial, sans-serif;
+	width: 200px;
+	padding: 10px;
+	border: none;
+	border-radius: 8px;
+	background-color: #548ad7;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
